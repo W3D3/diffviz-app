@@ -1,0 +1,25 @@
+{
+  "name": "DiffViz",
+  "version": "1.0.0",
+  "description" : "A desktop wrapper for DiffViz, to use it as a external diffing tool",
+  "author": {
+    "name" : "Christoph Wedenig",
+    "email" : "christoph@wedenig.org",
+    "url" : "http://wedenig.org"
+  },
+  "build": {
+    "appId": "at.aau.diffviz",
+    "mac": {
+      "category": "tools.diff"
+    }
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "electron index.js",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron-builder": "^20.28.4"
+  }
+}
